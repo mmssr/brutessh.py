@@ -5,7 +5,7 @@ import optparse
 import time
 from threading import *
 maxConnections = 5
-connection_lock = BoundedSempaphore(value=maxConnections)
+connection_lock = BoundedSemaphore(value=maxConnections)
 Found = False
 Fails = 0
 def connect(host, user, password, release):
